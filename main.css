@@ -1,0 +1,324 @@
+/* Code By Les Witherspoon 2019 */
+/* global defaults */
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1em;
+    box-sizing: border-box;
+    max-width: 1280px;
+    margin: 0;
+    padding: 0;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Concert One''Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* text-align: center; */
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+
+a {
+    text-decoration: none;
+    color: darkblue;
+
+}
+
+/* set up header and navigation */
+header {
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    background-color: white;
+    border-bottom: 3px solid whitesmoke;
+}
+
+#header-img {
+    max-width: 33%;
+    align-self: flex-start;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+nav ul {
+    display: inline-flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 0.5em;
+}
+
+nav li {
+    justify-content: space-around;
+}
+
+.nav-link {
+    padding: 2em 1em 2em 1em;
+    color: darkslateblue;
+    font-size: 1em;
+    font-weight: bolder;
+    font-stretch: expanded;
+}
+
+/* set up the main body */
+main {
+    text-align: center;
+    position: relative;
+    top: 200px;
+    width: 100%;
+}
+
+section {
+    width: 100%;
+
+    padding: 1.25em;
+}
+
+aside {
+    flex: 50%;
+    padding: 0 2em 0 2em;
+    margin: 0em;
+}
+
+button {
+    border: 1px solid lightgray;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 0.5em;
+    margin: 0.5em;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* height: auto; */
+    /* flex-wrap: wrap; */
+    /* flex-basis: 100%; */
+    padding: 1em;
+}
+
+
+.card {
+    display: flex;
+    flex-flow: row wrap;
+    /* flex-direction: row; */
+    justify-content: center;
+    max-width: 33vw;
+    margin: 0 0.25em 0 0.25em;
+    padding: 0 1em 0 1em;
+}
+
+.right-align-text {
+    text-align: right;
+    padding: 1em;
+}
+
+.btn {
+
+    /* margin: 2em; */
+    padding: 0.25em 0.5em 0.25em 0.5em;
+    background-color: white;
+    color: darkslateblue;
+    font-weight: bold;
+    width: 8em;
+    height: 3em;
+}
+
+.smaller-text {
+    display: block;
+    font-size: 0.9em;
+    font-style: italic;
+
+}
+
+#video {
+    flex: 50%;
+    align-self: center;
+    max-width: 640px;
+    max-height: auto;
+    padding: 1em;
+    margin: 0em 2em 0em 2em;
+    border: 1px solid whitesmoke;
+    box-shadow: -3px 3px 5px rgba(33, 33, 33, 0.2);
+}
+
+#solution {
+
+    background: lightskyblue;
+    border-radius: 100%;
+    margin: 0;
+    padding: 0;
+
+}
+
+#product h3 {
+    text-align: right;
+    color: white;
+    font-size: 2em;
+    margin-block-start: 0;
+    margin-block-end: 1em;
+}
+
+#product p {
+    text-align: right;
+    color: darkslategray;
+    font-weight: bolder;
+    font-size: 0.9em;
+    background-color: rgba(250, 250, 250, 0.2);
+    max-width: 50%;
+    margin: 0 0 3em 4em;
+    min-height: 25%;
+    padding: 1em;
+}
+
+/* id allows to set background images for the different products. */
+#product-one {
+    background-image: url(1-art-background-1061142.jpg);
+    background-position: 25%;
+    width: auto;
+
+}
+
+#product-two {
+    background-image: url(2-art-background-1061141-sm.jpg);
+    background-position: 25%;
+    width: auto;
+
+
+}
+
+#product-three {
+    background-image: url(3-art-background-1061140-sm.jpg);
+    background-position: 25%;
+    width: auto;
+
+
+}
+
+footer {
+    text-align: center;
+}
+
+#form {
+    display: flex;
+    justify-content: center;
+}
+
+#email {
+    justify-content: center;
+}
+
+
+/* responsiveness for small screens */
+@media (max-width: 768px) {
+
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #header-img {
+        display: flex;
+        align-self: center;
+        max-width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-block-start: 0;
+        margin-block-end: 0;
+        /* justify-content: center; */
+        padding: 0.25em;
+        padding-inline-start: 0;
+    }
+
+    .nav-link {
+        padding: 0.53em;
+    }
+
+    main {
+        top: 300px;
+    }
+
+    section {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    aside {
+        padding: 0 1em 0 1em;
+        margin: 0;
+    }
+
+    #video {
+        max-width: 100%;
+    }
+
+    .row {
+        flex-direction: column;
+        padding: 1em;
+    }
+
+    .card {
+        max-width: 100%;
+        margin: 0;
+    }
+
+    #problem {
+        padding: 0.5em;
+    }
+
+    footer {
+        max-width: 100%;
+    }
+
+    form {
+        justify-content: flex-end;
+    }
+
+    input {
+        float: right;
+    }
+
+
+}
